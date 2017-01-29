@@ -84,13 +84,22 @@
 
 
 
+<meta name="description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
+
+安装git yum install git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在服务器上搭建NodeJS运行环境">
 <meta property="og:url" content="http://yoursite.com/2017/01/29/在服务器上搭建NodeJS运行环境/index.html">
 <meta property="og:site_name" content="IceiceDoom">
-<meta property="og:updated_time" content="2017-01-29T08:21:31.919Z">
+<meta property="og:description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
+
+安装git yum install git">
+<meta property="og:updated_time" content="2017-01-29T10:29:27.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在服务器上搭建NodeJS运行环境">
+<meta name="twitter:description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
+
+安装git yum install git">
 
 
 
@@ -273,7 +282,19 @@
       
 
       
-        
+        <p>在服务端运行NodeJS可以将<a href="nodejs.org">NodeJS官网</a>源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：<strong>Centos 6 x86 minimal</strong><br>所以使用另一种方法安装NodeJS：<strong>nvm</strong>安装NodeJS。</p>
+<ol>
+<li>安装git <code>yum install git</code> <a id="more"></a></li>
+<li><p>首先进入<a href="https://github.com/creationix/nvm/" target="_blank" rel="external">nvm的github主页</a>,选择nvm下载方式，这里选择<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash</code>(最新版)复制到<strong>putty</strong>或者<strong>Xshell</strong>运行下载</p>
+</li>
+<li><p>安装完成后，重启服务器连接。然后运行    <code>nvm install 6.9.4</code>,也已下载其他版本的NodeJS</p>
+</li>
+<li><p>NodeJS安装完成后运行     <code>nvm use 6.9.4</code> 选择需要使用的版本</p>
+</li>
+<li><p>运行 <code>node -v</code> 测试NodeJS安装是否成功</p>
+</li>
+</ol>
+
       
     </div>
 
