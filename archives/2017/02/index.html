@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="NodeJS," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,22 +84,12 @@
 
 
 
-<meta name="description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
-
-安装git yum install git">
-<meta property="og:type" content="article">
-<meta property="og:title" content="在服务器上搭建NodeJS运行环境">
-<meta property="og:url" content="http://yoursite.com/2017/01/29/在服务器上搭建NodeJS运行环境/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IceiceDoom">
+<meta property="og:url" content="http://yoursite.com/archives/2017/02/index.html">
 <meta property="og:site_name" content="IceiceDoom">
-<meta property="og:description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
-
-安装git yum install git">
-<meta property="og:updated_time" content="2017-01-29T10:29:27.475Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在服务器上搭建NodeJS运行环境">
-<meta name="twitter:description" content="在服务端运行NodeJS可以将NodeJS官网源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：Centos 6 x86 minimal所以使用另一种方法安装NodeJS：nvm安装NodeJS。
-
-安装git yum install git">
+<meta name="twitter:title" content="IceiceDoom">
 
 
 
@@ -120,9 +110,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/29/在服务器上搭建NodeJS运行环境/"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2017/02/"/>
 
-  <title> 在服务器上搭建NodeJS运行环境 | IceiceDoom </title>
+  <title> 归档 | IceiceDoom </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -143,7 +133,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -221,137 +211,66 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 4 篇日志。 继续努力。
+    </span>
+
     
 
-  
-  
+      
+      
+      
 
-  
-  
-  
-
-  <article class="post post-type-tags " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      
         
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        </div>
+      
+      
+
+      
+
+  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2017/02/08/微信公众号开发(1)-ssh配置/" itemprop="url">
               
-                在服务器上搭建NodeJS运行环境
+                <span itemprop="name">ubuntu下的ssh配置</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-29T16:18:56+08:00" content="2017-01-29">
-              2017-01-29
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-02-08T18:31:00+08:00"
+              content="2017-02-08" >
+          02-08
+        </time>
+      </div>
 
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>在服务端运行NodeJS可以将<a href="nodejs.org">NodeJS官网</a>源码下载到服务器中，编译运行。但是在编译运行时，失败了。可能是系统的原因，我的服务器的操作系统是：<strong>Centos 6 x86 minimal</strong><br>所以使用另一种方法安装NodeJS：<strong>nvm</strong>安装NodeJS。</p>
-<ol>
-<li>安装git <code>yum install git</code> <a id="more"></a></li>
-<li><p>首先进入<a href="https://github.com/creationix/nvm/" target="_blank" rel="external">nvm的github主页</a>,选择nvm下载方式，这里选择<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash</code>(最新版)复制到<strong>putty</strong>或者<strong>Xshell</strong>运行下载</p>
-</li>
-<li><p>安装完成后，重启服务器连接。然后运行    <code>nvm install 6.9.4</code>,也已下载其他版本的NodeJS</p>
-</li>
-<li><p>NodeJS安装完成后运行     <code>nvm use 6.9.4</code> 选择需要使用的版本</p>
-</li>
-<li><p>运行 <code>node -v</code> 测试NodeJS安装是否成功</p>
-</li>
-</ol>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/NodeJS/" rel="tag">#NodeJS</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/01/28/博文上传/" rel="next" title="博文上传">
-                <i class="fa fa-chevron-left"></i> 博文上传
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/08/微信公众号开发(1)-ssh配置/" rel="prev" title="ubuntu下的ssh配置">
-                ubuntu下的ssh配置 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+    
+
+  </section>
+
+  
+
 
 
           </div>
@@ -359,10 +278,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -382,17 +297,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar1.jpg"
@@ -435,17 +341,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">此文章未包含目录</p>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -549,9 +444,11 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
 
 
   
