@@ -236,7 +236,7 @@
               
                 
                 <a class="post-title-link" href="/2017/02/08/微信公众号开发(1)-ssh配置/" itemprop="url">
-                  ubuntu下的ssh配置
+                  微信公众号开发(1)-ssh配置
                 </a>
               
             
@@ -278,23 +278,14 @@
 
       
         
-          
-            <p>今天开始做微信公众号开发，顺便写一下开发日志。</p>
+          <p>今天开始做微信公众号开发，顺便写一下开发日志。</p>
 <p>服务器是Bandwagon，使用的是ubuntu操作系统，所以需要使用ssh远程登录服务器。</p>
-<p>之前没用接触过Linux系统，所以从零开始学习。Google了很多资料，最后发现<a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" target="_blank" rel="external">阮一峰老师写的一篇文章</a>非常好，从这篇文章中得到了很多启发。</p>
-<p>言归正传，Linux下远程登录服务器，使用ssh-copy-id实现无密码登录。</p>
-<ol>
-<li><p>使用ssh-key-gen 在本地主机上创建密钥和公钥</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-key-gen -t rsa</div></pre></td></tr></table></figure>
-</li>
-<li><p>使用ssh-coyp-id 把公钥上传到服务器中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-copy-id~/.ssh/id_rsa.pub 服务器地址</div></pre></td></tr></table></figure>
-</li>
-<li><p>输入服务器地址即可登录</p>
-</li>
-</ol>
-
-          
+<p>之前没用接触过Linux系统，所以从零开始学习。Google了很多资料，最后发现<a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html">阮一峰老师写的一篇文章</a>非常好，从这篇文章中得到了很多启发。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/02/08/微信公众号开发(1)-ssh配置/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
